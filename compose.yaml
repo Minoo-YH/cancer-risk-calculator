@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:18
+    container_name: cancer-postgres-compose
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "127.0.0.1:5434:5432"
+    volumes:
+      - cancer_pgdata:/var/lib/postgresql
+volumes:
+  cancer_pgdata:
+    external: true
+
+
