@@ -1,0 +1,8 @@
+.env
+cancer_demo_backup.sql
+backend/.venv/
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+.pytest_cache/
+*.pyc
