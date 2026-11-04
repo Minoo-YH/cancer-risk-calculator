@@ -4,7 +4,9 @@
 
 [**Try the Live Demo**](https://cancer-risk-calculator.vercel.app/) · [**Explore the Source Code**](https://github.com/Minoo-YH/cancer-risk-calculator)
 
-![Cancer Risk Calculator — Live Deployment](pic/deployvercel.png)
+<p align="center">
+  <img src="pic/deployvercel.png" alt="Cancer Risk Calculator — Live Deployment" width="800">
+</p>
 
 ## Why I Built This
 
@@ -41,7 +43,9 @@ The user enters an age, selects a smoking status, and indicates whether there is
 
 The React frontend sends this information to the Flask API. The backend validates the input, calculates a fictional educational score, stores the calculation in PostgreSQL, and returns the result to the interface.
 
-![Calculator Form and Result](pic/Cancer_Calculation.png)
+<p align="center">
+  <img src="pic/Cancer_Calculation.png" alt="Calculator Form and Result" width="800">
+</p>
 
 The main goal was not to create a medical tool. It was to practice connecting the different parts of a real full-stack application and making them work together reliably.
 
@@ -101,15 +105,21 @@ Docker Compose makes it possible to start and manage the services together, whil
 
 ### Docker Desktop
 
-![Docker Desktop — Running Services](pic/DockerDekstop.png)
+<p align="center">
+  <img src="pic/DockerDekstop.png" alt="Docker Desktop — Running Services" width="800">
+</p>
 
 ### Running the Application with Docker
 
-![Docker Containers Running](pic/dockerRun.png)
+<p align="center">
+  <img src="pic/dockerRun.png" alt="Docker Containers Running" width="800">
+</p>
 
 ### Application Opened from Docker
 
-![Application Running Locally with Docker](pic/openFromDocker.png)
+<p align="center">
+  <img src="pic/openFromDocker.png" alt="Application Running Locally with Docker" width="800">
+</p>
 
 To run the project locally, create a `.env` file in the project root with the required PostgreSQL environment variables and use:
 
@@ -117,9 +127,9 @@ To run the project locally, create a `.env` file in the project root with the re
 docker compose up --build -d
 ```
 
-The Docker frontend is configured to run at:
+The Docker frontend is available at:
 
-`http://localhost:8088`
+`http://localhost:8080`
 
 Database credentials belong in local environment configuration and are not included in the repository.
 
@@ -130,8 +140,6 @@ The application is deployed using separate cloud services:
 - **Frontend:** Vercel
 - **Backend:** Render
 - **Database:** Render PostgreSQL
-
-**Live Application:** https://cancer-risk-calculator.vercel.app/
 
 **Backend Health Check:** https://cancer-risk-api-eqfi.onrender.com/api/health
 
